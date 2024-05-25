@@ -1,0 +1,154 @@
+.nav-mobile{
+    display: none;
+}
+.nav-for-mobile{
+    display: none;
+}
+.footer-h3{
+    display: none;
+}
+
+@media screen and (max-width: 1080px){
+    .section1 .title div , .section .about div{
+        min-width: 180px;
+        max-width: 550px;
+        margin: 220px auto;
+        text-align: center;
+    }
+
+    .section2 .temples .temples-in-btb{
+        display: flex;
+        flex-direction: column;
+    }
+    .section2 .waterfalls .grid-x, .section2 .other-places .grid-x{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 75px;
+    }
+    .section2 .grid-x div{
+        min-width: 215px;
+        max-width: 300px;
+    }
+    .section2 .grid-x img{
+        width: 290px;
+    }
+
+    .section3 .things-to-do-in-btb .detail{
+        flex-direction: column;
+    }
+    .section3 .div-section3 .wat-ek-phnom{
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .section1 .title div , .section .about div{
+        max-width: 403px;
+    }
+
+    .section1 .navigation-bar .nav , .section .navigation-bar .nav{
+        display: none;
+    }
+    .section1 .navigation-bar .nav-mobile, .section .navigation-bar .nav-mobile{
+        display: flex;
+        font-size: 25px;
+    }
+    .section1 .show-nav-mobile, .section .show-nav-mobile{
+        background-color: lightsteelblue;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section1 .show-nav-mobile a , .section .show-nav-mobile a{
+        text-decoration: none;
+        color: white;
+    }
+     
+
+    .section2 .waterfalls .grid-x, .section2 .other-places .grid-x{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+    }
+
+    .section3 .things-to-do-in-btb .detail{
+        gap: 10px;
+    }
+    .section3 .things-to-do-in-btb .div-section3 img{
+        max-width: 350px;
+    }
+    .section3 .btn-step img{
+        max-width: 290px;
+    }
+
+    footer h3{
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (max-width: 480px){
+    .section1 .title div , .section .about div{
+        max-width: 360px;
+    }
+
+
+    .section2 .temples-in-btb img, .section2 .grid-x img, .section2 .grid-x img{
+        width: 250px;
+        height: 200px;
+    }
+    .section2 .waterfalls .grid-x, .section2 .other-places .grid-x{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 30px 80px;
+    }
+  
+    .section3 .things-to-do-in-btb .div-section3 img{
+        max-width: 250px;
+    }
+    .section3 .btn-step img{
+        max-width: 180px;
+    }
+
+    marquee{
+        display: none;
+    }
+    .footer-h3{
+        display: block;
+    }
+
+}
+/* 1080 , 720 , 480 */
+
+@media screen and (min-width : 1800px){
+    body, .section3 p{
+        font-size: 2rem;
+    }
+    .section1 , .section{
+        min-height: 1350px;
+    }
+    .section1 .title div , .section .about div{
+        max-width: 1000px;
+    }
+
+    .section2 .temples .temples-in-btb div{
+        width: 790px;
+    }
+    .section2 .temples .temples-in-btb img{
+        width: 600px;
+        height: 450px;
+    }
+    .section2 .waterfalls .grid-x, .section2 .other-places .grid-x{
+        gap: 10px;
+    }
+    .section2 .grid-x div{
+        width: 500px;
+    }
+    .section2 .grid-x img{
+        width: 450px;
+        height: 290px;
+    }
+}
